@@ -1,0 +1,60 @@
+.Slider{
+    width: 38.5em;
+    height: 21.65em;
+    background-color: gray;
+    margin: 0 auto;
+}
+
+.buttons{
+    margin: 0 auto;
+    padding-top:10em;
+    width: 36.1em;
+    display:flex;
+    justify-content:space-between;
+}
+
+.buttons button{
+    background: rgba(0, 0, 0, 0.6);
+    border: none;
+    width:48px;
+    height:48px;
+    border-radius:50%;
+    cursor: pointer;
+}
+.buttons button:hover{
+    background: rgba(0, 0, 0, 0.4);
+}
+.buttons button p{
+    color: white;
+    font-size:1.5em
+}
+
+.leftButton{
+    transform: rotate(180deg);
+}
+.leftButton p {
+    margin-top: 1px;
+}
+.rightButton p{
+    margin-top: -1px;
+}
+
+@media screen and (max-width: 600px){
+    .buttons{
+        padding-top:8.5em;
+    }
+    .buttons button{
+        width: 40px;
+        height: 40px;
+    }
+    .buttons button p{
+        color: white;
+        font-size:1.4em
+    }
+    .leftButton p {
+        margin-top: 0px;
+    }
+    .rightButton p{
+        margin-top: -3px;
+    }
+}

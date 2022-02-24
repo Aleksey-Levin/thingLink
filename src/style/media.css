@@ -1,0 +1,34 @@
+@media screen and (max-width: 1230px){
+    html{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 840px) {
+    html{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 700px) {
+    html{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 600px){
+    html{
+        font-size: 9px;
+    }
+    h4{
+        font-size: 1.5em;
+    }
+    .tagName img{
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+    }
+    h3{
+        font-size: 1.5em;
+    }
+    p{
+        font-size: 1.3em;
+    }
+}
