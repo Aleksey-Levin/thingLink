@@ -5,7 +5,7 @@ const LabelContent = (props) => {
     return (
         <div id={props.id}>
             <Tag layout = {props.data.layout}/>
-            <div className="content">
+            <div>
                 <p>
                     {props.data.data.text}
                 </p>

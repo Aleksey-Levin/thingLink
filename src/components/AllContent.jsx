@@ -32,7 +32,9 @@ const AllContent = (props) => {
         return (
             <div>
                 {findValue(type)!=0 ? <div className="line" role="separator"></div>: ''}
-                {render}
+                <div className="allContent">
+                    {render}
+                </div>
             </div>
         )
 };

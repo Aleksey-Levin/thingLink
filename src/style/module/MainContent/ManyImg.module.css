@@ -1,19 +1,23 @@
-.Slider{
+.Slider img{
     width: 38.5em;
     height: 21.65em;
-    background-color: gray;
     margin: 0 auto;
 }
 
 .buttons{
-    margin: 0 auto;
-    padding-top:10em;
     width: 36.1em;
     display:flex;
     justify-content:space-between;
 }
 
+.buttonAbsolute{
+    position:absolute;
+    margin-top:10em;
+    margin-left: 1em;
+}
+
 .buttons button{
+    z-index: 9999;
     background: rgba(0, 0, 0, 0.6);
     border: none;
     width:48px;
@@ -40,9 +44,6 @@
 }
 
 @media screen and (max-width: 600px){
-    .buttons{
-        padding-top:8.5em;
-    }
     .buttons button{
         width: 40px;
         height: 40px;
