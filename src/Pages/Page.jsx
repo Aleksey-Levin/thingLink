@@ -25,8 +25,7 @@ const Page = () => {
             <header role="banner">
                 <img
                     src={API['results'].url}
-                    alt="Выбранный медиа-контент"
-                    role="img"/>
+                    alt="Выбранный медиа-контент"/>
             </header>
             <main className="container" role="main">
                 <div className="nameAndAuthor">

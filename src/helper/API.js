@@ -152,7 +152,8 @@ export let API = {
                 "data": {
                     "id": "1232432",
                     "text": "HeyHey",
-                }
+                },
+                "nubbin" : "11generaldotwhitesvg"
             }
 
         ],

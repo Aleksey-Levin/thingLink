@@ -4,7 +4,7 @@ import Tag from "./Tag";
 const LabelContent = (props) => {
     return (
         <div id={props.id}>
-            <Tag layout = {props.data.layout}/>
+            <Tag layout = {props.data}/>
             <div>
                 <p>
                     {props.data.data.text}

@@ -1,3 +1,9 @@
+@media screen and (max-width: 1500px){
+    html{
+        font-size: 20px;
+    }
+}
+
 @media screen and (max-width: 1230px){
     html{
         font-size: 18px;
@@ -30,5 +36,11 @@
     }
     p{
         font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width: 450px){
+    html{
+        font-size: 7px;
     }
 }

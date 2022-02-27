@@ -28,34 +28,30 @@
 .buttons button:hover{
     background: rgba(0, 0, 0, 0.4);
 }
-.buttons button p{
-    color: white;
-    font-size:1.5em
+.buttons svg{
+    height:100%;
 }
+
 
 .leftButton{
     transform: rotate(180deg);
 }
-.leftButton p {
-    margin-top: 1px;
+.leftButton svg{
+    padding-top: 1px;
 }
-.rightButton p{
-    margin-top: -1px;
+.rightButton svg{
+    padding-top: -1px;
 }
 
+@media screen and (max-width: 700px){
+   .buttonAbsolute{
+    margin-top:9em;
+   }
+
+}
 @media screen and (max-width: 600px){
     .buttons button{
         width: 40px;
         height: 40px;
-    }
-    .buttons button p{
-        color: white;
-        font-size:1.4em
-    }
-    .leftButton p {
-        margin-top: 0px;
-    }
-    .rightButton p{
-        margin-top: -3px;
     }
 }

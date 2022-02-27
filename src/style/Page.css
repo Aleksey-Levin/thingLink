@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
+@font-face {
+    font-family: 'SFPRO';
+    src: url('../style/fonts/SFPRO.OTF');
+}
+
+@font-face {
+    font-family: 'SFPROMED';
+    src: url('../style/fonts/SFPROMED.OTF');
+}
+
 *{
     margin: 0;
     padding:0;
@@ -9,18 +19,23 @@ p{
     margin: 0;
     padding: 0;
     font-size: 1em;
+    font-family: 'SFPRO';
 }
 a{
     text-decoration: none;
+    font-family: 'SFPRO';
 }
 html{
     font-size: 26px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'SFPROMED';
     font-weight: 400;
+    line-height:1.6em;
     color: black;
     background-image: url("https://sun9-68.userapi.com/impg/K0DKeyJAFe1WTRsZUOZpCHiuOQ8OO3qyXec3tQ/krgHFYJdFdE.jpg?size=1440x892&quality=96&sign=ddf62ca218f453d10919faadf7157cfd&type=album");
 }
-
+h1,h3{
+    line-height: 2.1em;
+}
 header{
     margin: 0 auto;
     width: 46.5em;
@@ -41,12 +56,9 @@ header img{
     margin: 0 auto;
 }
 
-.nameAndAuthor{
-    margin-bottom: 1.6em;
-}
-
 .nameAndAuthor h1{
-    margin-bottom: 0.2em;
+    font-size: 1.5em;
+    margin-bottom: 0.1em;
 }
 
 .nameAndAuthor p{
@@ -58,7 +70,7 @@ header img{
     margin-bottom: 0.8em;
 }
 .allContent{
-    padding: 1.5em 0;
+    padding: 1.6em 0;
 }
 .tagName img{
     margin-right: 10px;
@@ -66,7 +78,7 @@ header img{
     height: 37px;
 }
 h3{
-    margin-bottom: 0.6em;
+    margin-bottom: 0.51em;
 }
 .line{
     height: 2px;

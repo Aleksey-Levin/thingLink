@@ -6,7 +6,7 @@ import {allUrlFunction} from "../helper/functionComputed";
 const TransitionContent = (props) => {
     return (
         <div id={props.id}>
-            <Tag layout={props.data.layout}/>
+            <Tag layout={props.data}/>
             <div className={classes.transition}>
                 <p><span className={classes.transitionTo}>Transition to:</span> {props.data.data.text}</p>
                 <a className={classes.moveNextScene} href={allUrlFunction['url'](props.id)}>

@@ -31,7 +31,7 @@ const AllContent = (props) => {
         }
         return (
             <div>
-                {findValue(type)!=0 ? <div className="line" role="separator"></div>: ''}
+                {findValue(type)!==0 ? <div className="line" role="separator"></div>: ''}
                 <div className="allContent">
                     {render}
                 </div>

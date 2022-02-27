@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import classes from '../style/module/MainContent/ManyImg.module.css'
-import VideoOmponent from "./VideoСomponent";
+import VideoComponent from "./VideoComponetn";
 const ManyImg = (props) => {
     const imgArr = props.data.data.data.image.split('|');
     const [currentPosition, setCurrentPosition] = useState(0);
@@ -17,25 +17,26 @@ const ManyImg = (props) => {
 
     useEffect(()=>{
         setCurrentImg(imgArr[currentPosition % (imgArr.length)]);
-    },[currentPosition]);
+    },[currentPosition, imgArr]);
 
     return (
         <div className={classes.Slider} role="slider">
             <div className={classes.buttonAbsolute}>
                 <div className={classes.buttons}>
                     <button className={classes.leftButton} onClick={backImage}>
-                        <p>
-                            &#62;
-                        </p>
+                        <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.5858 6.00001L0.292908 1.70712L1.70712 0.292908L7.41423 6.00001L1.70712 11.7071L0.292908 10.2929L4.5858 6.00001Z" fill="white"/>
+                        </svg>
+
                     </button>
                     <button className={classes.rightButon} onClick={nextImage}>
-                        <p>
-                            &#62;
-                        </p>
+                        <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.5858 6.00001L0.292908 1.70712L1.70712 0.292908L7.41423 6.00001L1.70712 11.7071L0.292908 10.2929L4.5858 6.00001Z" fill="white"/>
+                        </svg>
                     </button>
                 </div>
             </div>
-            {(currentImg.split('.')[currentImg.split('.').length - 1] == "mp4") ? <VideoOmponent videoSrc = {currentImg}/> : <img src={currentImg}/>}
+            {(currentImg.split('.')[currentImg.split('.').length - 1] === "mp4") ? <VideoComponent videoSrc = {currentImg}/> : <img src={currentImg} alt={'main img'}/>}
         </div>
     );
 };

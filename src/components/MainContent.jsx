@@ -5,7 +5,7 @@ import classes from "../style/module/MainContent/MainContent.module.css"
 const MainContent = (props) => {
     return (
         <div id={props.id}>
-            <Tag layout = {props.data.layout}/>
+            <Tag layout = {props.data}/>
             <ManyImg data = {props}/>
             <audio className={classes.mainAudio} controls>
                 <source src="//mp3uks.ru/mp3/files/fem-love-fotografiruyu-zakat-mp3.mp3"
@@ -17,7 +17,7 @@ const MainContent = (props) => {
             <p className={classes.text}>
                 {props.data.data.text}
             </p>
-            <button className={classes.button} role={'button'}>
+            <button className={classes.button}>
                 <a href={props.data.data.url}>{props.data.data.cta}</a>
             </button>
         </div>
