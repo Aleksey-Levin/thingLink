@@ -8,7 +8,7 @@ const MainContent = (props) => {
             <Tag layout = {props.data}/>
             <ManyImg data = {props}/>
             <audio className={classes.mainAudio} controls>
-                <source src="//mp3uks.ru/mp3/files/fem-love-fotografiruyu-zakat-mp3.mp3"
+                <source src={props.data.audio}
                         type="audio/ogg; codecs=vorbis"></source>
             </audio>
             <h3>
